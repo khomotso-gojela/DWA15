@@ -1,0 +1,86 @@
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-image: url(./assets/Grouphalf-logo.svg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 50%;
+}
+
+.container {
+  height: 100hv;
+}
+
+.logo {
+  margin: 7px;
+  height: 3em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.nav {
+  width: 100%;
+  background: black;
+  display: flex;
+  align-items: center;
+}
+
+.nav > h3 {
+  color: rgb(255, 248, 239);
+  margin: 020px;
+  padding-top: 5px;
+}
+
+.nav > h2 {
+  color: #42a1bb;
+  margin-right: auto;
+  padding: 0;
+}
+
+main {
+  margin: 60px;
+  color: rgb(255, 255, 255);
+}
+
+.main--list > li::marker {
+  color: #42a1bb;
+  font-size: 1.4em
+}
